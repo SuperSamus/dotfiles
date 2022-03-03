@@ -1,0 +1,265 @@
+# pkexec
+exec /run/current-system/sw/libexec/polkit-gnome-authentication-agent-1
+# Startup
+exec thunar --daemon
+exec playerctld daemon
+exec blueman-applet
+exec nm-applet --indicator
+exec gammastep
+
+### Variables
+set $mod Mod4
+set $lock swaylock-fancy
+
+font pango: Roboto 10
+
+gaps inner 5
+gaps outer 5
+default_border pixel 2
+default_floating_border pixel 0
+smart_borders on
+smart_gaps on
+
+# Your preferred terminal emulator
+set $term foot
+
+# Your preferred application launcher
+set $menu ~/.config/rofi/launchers/colorful/launcher.sh
+set $power ~/.config/rofi/powermenu/powermenu.sh
+
+### Output configuration
+output * bg wallpaper.jpg fill
+
+### Idle configuration
+exec swayidle -w \
+    timeout 600 'brightnessctl set 20%-' \
+    resume 'brightnessctl set 20%+' \
+    timeout 1800 'swaymsg "output eDP-1 dpms off"' \
+    resume 'swaymsg "output * dpms on"' \
+    timeout 7200 'systemctl suspend' \
+    resume 'swaymsg "output * dpms on"' \
+    before-sleep 'playerctl -a pause ; $lock'
+
+
+# class                 border  backgr. text    indicator child_border
+client.focused          #29B6F6 #263238 #c0caf5 #7dcfff   #29B6F6
+client.focused_inactive #29B6F6 #263238 #c0caf5 #7dcfff   #29B6F6
+client.unfocused        #263238 #24283b #a9b1d6 #7dcfff   #263238
+client.urgent           #FB8C00 #FB8C00 #1d202f #7dcfff   #FB8C00
+
+# Status Bar
+bar {
+    swaybar_command waybar
+}
+
+seat seat0 xcursor_theme 'Adwaita'
+exec_always import-gsettings
+
+for_window [app_id=pavucontrol] floating enable
+for_window [app_id=blueman-manager] floating enable
+
+# Tag xwayland windows
+for_window [shell="xwayland"] title_format "<span>[X] %title</span>"
+
+input type:keyboard {
+    xkb_layout "it"
+}
+input type:touchpad {
+    drag enabled
+    dwt enabled
+    tap enabled
+    natural_scroll enabled
+    middle_emulation enabled
+}
+seat * hide_cursor 8000
+
+# Home row direction keys, like vim
+set $left h
+set $down j
+set $up k
+set $right l
+
+### Key bindings
+#
+# Start a terminal
+bindsym $mod+Return exec $term
+
+# Kill focused window
+bindsym $mod+Shift+q kill
+
+# Start your launcher
+bindsym $mod+d exec $menu
+
+# Drag floating windows by holding down $mod and left mouse button.
+# Resize them with right mouse button + $mod.
+# Despite the name, also works for non-floating windows.
+# Change normal to inverse to use left mouse button for resizing and right
+# mouse button for dragging.
+floating_modifier $mod normal
+
+# Reload the configuration file
+bindsym $mod+Shift+c reload
+
+# Exit sway (logs you out of your Wayland session)
+#bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
+
+bindsym $mod+shift+x exec $power
+
+# Multimedia keys
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
+bindsym XF86AudioPlay exec playerctl --player playerctld play-pause
+bindsym XF86AudioNext exec playerctl --player playerctld next
+bindsym XF86AudioPrev exec playerctl --player playerctld previous
+
+# Brightness
+bindsym XF86MonBrightnessUp exec brightnessctl set 5%+
+bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
+
+# Screenshots
+bindsym Print exec grimshot copy
+bindsym alt+Print exec grimshot copy active
+bindsym Shift+Print exec grimshot copy area
+bindsym ctrl+Print exec grimshot save
+bindsym ctrl+alt+Print exec grimshot save active
+bindsym ctrl+Shift+Print exec grimshot save area
+
+# Clipboard manager
+#bindsym $mod+v exec $term --class=launcher-clipboard -e clipboard
+
+bindsym $mod+q exec makoctl dismiss
+
+# Moving around:
+#
+# Move your focus around
+bindsym $mod+$left focus left
+bindsym $mod+$down focus down
+bindsym $mod+$up focus up
+bindsym $mod+$right focus right
+# Or use $mod+[up|down|left|right]
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# Move the focused window with the same, but add Shift
+bindsym $mod+Shift+$left move left
+bindsym $mod+Shift+$down move down
+bindsym $mod+Shift+$up move up
+bindsym $mod+Shift+$right move right
+# Ditto, with arrow keys
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# Move the focused workspace with the same, but add Shift
+bindsym $mod+Control+Shift+$right move workspace to output right
+bindsym $mod+Control+Shift+$left move workspace to output left
+bindsym $mod+Control+Shift+$down move workspace to output down
+bindsym $mod+Control+Shift+$up move workspace to output up
+# Ditto, with arrow keys
+bindsym $mod+Control+Shift+Right move workspace to output right
+bindsym $mod+Control+Shift+Left move workspace to output left
+bindsym $mod+Control+Shift+Down move workspace to output down
+bindsym $mod+Control+Shift+Up move workspace to output up
+
+#
+# Workspaces:
+#
+set $ws1 number 1
+set $ws2 number 2
+set $ws3 number 3
+set $ws4 number 4
+set $ws5 number 5
+set $ws6 number 6
+set $ws7 number 7
+set $ws8 number 8
+set $ws9 number 9
+set $ws10 number 10
+
+# Switch to workspace
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+bindsym $mod+6 workspace $ws6
+bindsym $mod+7 workspace $ws7
+bindsym $mod+8 workspace $ws8
+bindsym $mod+9 workspace $ws9
+bindsym $mod+0 workspace $ws10
+
+# Move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace $ws1
+bindsym $mod+Shift+2 move container to workspace $ws2
+bindsym $mod+Shift+3 move container to workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4
+bindsym $mod+Shift+5 move container to workspace $ws5
+bindsym $mod+Shift+6 move container to workspace $ws6
+bindsym $mod+Shift+7 move container to workspace $ws7
+bindsym $mod+Shift+8 move container to workspace $ws8
+bindsym $mod+Shift+9 move container to workspace $ws9
+bindsym $mod+Shift+0 move container to workspace $ws10
+
+# Layout stuff:
+#
+# You can "split" the current object of your focus with
+# $mod+b or $mod+v, for horizontal and vertical splits
+# respectively.
+bindsym $mod+b splith
+bindsym $mod+v splitv
+
+# Switch the current container between different layout styles
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# Make the current focus fullscreen
+bindsym $mod+f fullscreen
+
+# Toggle the current focus between tiling and floating mode
+bindsym $mod+Shift+space floating toggle
+
+# Swap focus between the tiling area and the floating area
+bindsym $mod+space focus mode_toggle
+
+# Move focus to the parent container
+bindsym $mod+a focus parent
+#
+# Scratchpad:
+#
+# Sway has a "scratchpad", which is a bag of holding for windows.
+# You can send windows there and get them back later.
+
+# Move the currently focused window to the scratchpad
+bindsym $mod+Shift+minus move scratchpad
+
+# Show the next scratchpad window or hide the focused scratchpad window.
+# If there are multiple scratchpad windows, this command cycles through them.
+bindsym $mod+minus scratchpad show
+#
+# Resizing containers:
+#
+bindsym $mod+r mode "resize"
+
+mode "resize" {
+    bindsym $left resize shrink width 30px
+    bindsym $down resize grow height 30px
+    bindsym $up resize shrink height 30px
+    bindsym $right resize grow width 30px
+
+# Ditto, with arrow keys
+    bindsym Left resize shrink width 30px
+    bindsym Down resize grow height 30px
+    bindsym Up resize shrink height 30px
+    bindsym Right resize grow width 30px
+
+# Return to default mode
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+include /etc/sway/config.d/*

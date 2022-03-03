@@ -1,0 +1,24 @@
+layer=overlay
+anchor=bottom-right
+background-color=#212121
+text-color=#FFFFFF
+format=<b>%s</b>\n\n%b
+width=350
+margin=0,20,20
+padding=10
+border-size=2
+border-radius=5
+default-timeout=6000
+
+[urgency=low]
+background-color=#37474F
+
+[urgency=high]
+background-color=#FF5252
+default-timeout=0
+
+[grouped]
+format=(%g) <b>%s</b>\n\n\n%b
+
+[mode=dnd]
+invisible=1

@@ -1,0 +1,118 @@
+@define-color grey-workspace #455A64;
+@define-color black #212121;
+@define-color grey #9E9E9E;
+@define-color indigo #536DFE;
+@define-color light-blue #03A9F4;
+@define-color urgent #FB8C00;
+
+@define-color grey-modules #37474F;
+@define-color red #FF5252;
+@define-color deep-orange #FF5722;
+@define-color orange #FF9800;
+@define-color yellow #FFEB3B;
+@define-color green #4CAF50;
+@define-color blue #448AFF;
+@define-color purple #E040FB;
+
+* {
+    border: none;
+    border-radius: 0px;
+    font-family: Material Design Icons;
+    font-size: 14px;
+    min-height: 0px;
+}
+
+window#waybar {
+    background: transparent;
+    color: white;
+}
+
+#workspaces {
+	background-color: @grey-workspace;
+	margin: 5px;
+	margin-left: 10px;
+	border-radius: 5px;
+}
+#workspaces button {
+    padding: 5px 10px;
+    color: @grey;
+    min-width: 0px;
+}
+
+#workspaces button.focused {
+    color: white;
+    background-color: @indigo;
+    border-radius: 5px;
+}
+
+#workspaces button:hover {
+	background-color: @light-blue;
+	color: @black;
+	border-radius: 5px;
+}
+
+#workspaces button.urgent {
+	color: @urgent;
+}
+
+
+#tray, #idle_inhibitor, #pulseaudio, #backlight, #battery, #network, #custom-date, #clock {
+	background-color: @grey-modules;
+	padding: 5px 10px;
+	margin: 5px 0px;
+}
+
+#custom-date {
+	color: @blue;
+}
+
+#custom-power {
+	color: #24283b;
+	background-color: #db4b4b;
+	border-radius: 5px;
+	margin-right: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	padding: 5px 10px;
+}
+
+#clock {
+    color: @purple;
+    border-radius: 0px 5px 5px 0px;
+    margin-right: 10px;
+}
+
+#tray {
+    border-radius: 5px 0px 0px 5px;
+}
+
+#idle_inhibitor {
+    color: @grey;
+}
+
+#idle_inhibitor.activated {
+    color: white;
+}
+
+#backlight {
+    color: @yellow;
+}
+
+#battery {
+    color: @green;
+}
+
+#battery.charging {
+    color: @green;
+}
+
+#battery.warning:not(.charging) {
+    background-color: @deep-orange;
+    color: @black;
+    border-radius: 5px 5px 5px 5px;
+}
+
+#pulseaudio {
+	color: @orange;
+}
