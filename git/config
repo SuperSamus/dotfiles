@@ -1,0 +1,7 @@
+[init]
+	defaultBranch = main
+[user]
+	email = tinozzo123@tutanota.com
+	name = Martino Fontana
+[credential]
+	helper = store

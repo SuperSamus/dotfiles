@@ -1,0 +1,459 @@
+
+PCSX2 1.7.0-0- compiled on Jan  1 1980
+Savestate version: 0x9a290000
+
+Host Machine Init:
+	Operating System =  
+	Physical RAM     =  7385 MB
+	CPU name         =  AMD Ryzen 5 4500U with Radeon Graphics
+	Vendor/Model     =  AuthenticAMD (stepping 01)
+	CPU speed        =  2.368 ghz (6 logical threads)
+	x86PType         =  Standard OEM
+	x86Flags         =  178bfbff 7ed8320b
+	x86EFlags        =  2fd3fbff
+
+x86 Features Detected:
+	SSE2.. SSE3.. SSSE3.. SSE4.1.. SSE4.2.. AVX.. AVX2.. FMA
+	SSE4a 
+	Pcsx2 was compiled as 64-bits.
+
+Installing POSIX SIGSEGV handler...
+Reserving memory for recompilers...
+[GameDB] 10740 games on record (loaded in 226ms)
+HLE Host: Set 'host:' root path to: /
+
+Patches: No CRC found, using 00000000 instead.
+isoFile open ok: /home/games/ROM/PS2/Ratchet & Clank (USA) (En,Fr,De,Es,It).iso
+	Image type  = DVD
+ * CDVD Disk Open: DVD, Single layer or unknown:
+ * * Track 1: Data (Mode 1) (2057664 sectors)
+Current Renderer: OpenGL
+EGL Version: 1.5
+EGL Extensions: EGL_ANDROID_blob_cache EGL_ANDROID_native_fence_sync EGL_CHROMIUM_sync_control EGL_EXT_buffer_age EGL_EXT_create_context_robustness EGL_EXT_image_dma_buf_import EGL_EXT_image_dma_buf_import_modifiers EGL_EXT_protected_surface EGL_EXT_swap_buffers_with_damage EGL_KHR_cl_event2 EGL_KHR_config_attribs EGL_KHR_create_context EGL_KHR_create_context_no_error EGL_KHR_fence_sync EGL_KHR_get_all_proc_addresses EGL_KHR_gl_colorspace EGL_KHR_gl_renderbuffer_image EGL_KHR_gl_texture_2D_image EGL_KHR_gl_texture_3D_image EGL_KHR_gl_texture_cubemap_image EGL_KHR_image EGL_KHR_image_base EGL_KHR_image_pixmap EGL_KHR_no_config_context EGL_KHR_reusable_sync EGL_KHR_surfaceless_context EGL_KHR_swap_buffers_with_damage EGL_EXT_pixel_format_float EGL_KHR_wait_sync EGL_MESA_configless_context EGL_MESA_drm_image EGL_MESA_image_dma_buf_export EGL_MESA_query_driver EGL_NOK_texture_from_pixmap EGL_WL_bind_wayland_display 
+Trying version 4.6 (Core)
+Got version 4.6 (Core)
+Created a OpenGL context
+GL_VENDOR: AMD
+GL_RENDERER: AMD RENOIR (DRM 3.42.0, 5.15.6-xanmod2-tt, LLVM 13.0.0)
+GL_VERSION: 4.6 (Core Profile) Mesa 21.2.6
+GL_SHADING_LANGUAGE_VERSION: 4.60
+INFO: GL_ARB_sparse_texture is NOT SUPPORTED
+INFO: GL_ARB_sparse_texture2 is NOT SUPPORTED
+INFO: GL_ARB_gpu_shader5 is available
+INFO: GL_ARB_shader_image_load_store is available
+INFO: GL_ARB_clear_texture is available
+INFO: GL_ARB_direct_state_access is available
+INFO: GL_ARB_texture_barrier is available
+
+Available VRAM/RAM:677MB for textures
+GS Lookup CRC:00000000
+48000 SampleRate: 
+GS Lookup CRC:00000000
+Request SDL audio driver: pulseaudio
+Opened SDL audio driver: pulseaudio
+McdSlot 0 [File]: /home/martino/.config/PCSX2/memcards/Mcd001.ps2
+McdSlot 1 [File]: /home/martino/.config/PCSX2/memcards/Mcd002.ps2
+EE/iR5900-32 Recompiler Reset
+	Bios Found: USA     v01.60(07/02/2002)  Console
+	BIOS r module not found, skipping...
+	BIOS r module not found, skipping...
+	BIOS e module not found, skipping...
+# Initialize memory (rev:3.63, ctm:196Mhz, cpuclk:147Mhz detected)
+Frame buffer size set to  512x512 (1536x1536)
+# Total accessable memory size: 32 MB (B:2:8:0) (363:2:7c30)
+# TLB spad=0 kernel=1:12 default=13:30 extended=31:38
+# Initialize Start.
+# Initialize GS ...
+# Initialize INTC ...
+# Initialize TIMER ...
+# Initialize DMAC ...
+# Initialize VU1 ...
+# Initialize VIF1 ...
+# Initialize GIF ...
+# Initialize VU0 ...
+# Initialize VIF0 ...
+# Initialize IPU ...
+# Initialize FPU ...
+# Initialize User Memory ...
+
+PlayStation 2 ======== Hard reset boot
+ ROMGEN=2002-0207, IOP info (CPUID=1f, CACH_CONFIG=0, 2MB, IOP mode)
+ <20020207-164243,ROMconf,PS20160AC20020207.bin:11552>
+# Initialize Scratch Pad ...
+# Initialize Done.
+
+EE DECI2 Manager version 0.06 Feb  7 2002 16:41:20
+  CPUID=2e20, BoardID=0, ROMGEN=2002-0207, 32M
+
+Patches: No CRC found, using 00000000 instead.
+(SYSTEM.CNF) Detected PS2 Disc = cdrom0:\SCUS_971.99;1
+(SYSTEM.CNF) Software version = 1.00
+(SYSTEM.CNF) Disc region type = NTSC
+ELF (cdrom0:\SCUS_971.99;1) Game CRC = 0xCE4933D0, EntryPoint = 0x0012D728
+(SYSTEM.CNF) Detected PS2 Disc = cdrom0:\SCUS_971.99;1
+(SYSTEM.CNF) Software version = 1.00
+(SYSTEM.CNF) Disc region type = NTSC
+
+IOP Realtime Kernel Ver.0.9.1
+    Copyright 1999 (C) Sony Computer Entertainment Inc. 
+Reboot service module.(99/11/10)
+cdvd driver module version 0.1.1 (C)SCEI
+Load File service.(99/11/05)
+Multi Threaded Fileio module.(99/11/15) 
+iop heap service (99/11/03)
+loadelf: fname cdrom0:¥SCUS_971.99;1 secname all
+loadelf version 3.30
+Input ELF format filename = cdrom0:¥SCUS_971.99;1
+0 00100080 0013d2e0 ....................
+Loaded, cdrom0:¥SCUS_971.99;1
+start address 0x12d728
+gp address 00000000
+# Restart Without Memory Clear.
+# Initialize GS ...
+# Initialize INTC ...
+# Initialize TIMER ...
+# Initialize DMAC ...
+# Initialize VU1 ...
+# Initialize VIF1 ...
+# Initialize GIF ...
+# Initialize VU0 ...
+# Initialize VIF0 ...
+# Initialize IPU ...
+# Initialize FPU ...
+# Initialize Scratch Pad ...
+# Restart Without Memory Clear Done.
+Elf entry point @ 0x0012d728 about to get recompiled. Load patches first.
+[GameDB] Searching for 'scus-97199' in GameDB
+[GameDB] Found 'scus-97199' in GameDB
+[GameDB] Searching for patch with CRC 'ce4933d0'
+[GameDB] No CRC-specific patch or default patch found
+(GameDB) Enabled Gamefix: EETimingHack
+(GameDB) Enabled Gamefix: VUKickstartHack
+Overall 0 Widescreen hacks loaded
+Loading patch 'CE4933D0.pnach' from archive '/nix/store/kjhl6cahabyr4vk7464nggs6zkhp6491-pcsx2-1.7.2105/share/PCSX2/cheats_ws.zip'
+comment: Widescreen hack by PsxFan107
+(Wide Screen Cheats DB) Patches Loaded: 64
+[GameDB] Searching for 'scus-97199' in GameDB
+[GameDB] Found 'scus-97199' in GameDB
+[GameDB] Searching for patch with CRC 'ce4933d0'
+[GameDB] No CRC-specific patch or default patch found
+EE/iR5900-32 Recompiler Reset
+Get Reboot Request From EE
+ROM directory not found
+GS Lookup CRC:CE4933D0
+GS Lookup CRC:CE4933D0
+
+PlayStation 2 ======== Update rebooting..
+
+PlayStation 2 ======== Update reboot complete
+cdvdman Init
+
+IOP Realtime Kernel Ver. 2.2
+    Copyright 1999-2002 (C) Sony Computer Entertainment Inc. 
+Reboot service module.(99/11/10)
+cdvd driver module version 0.1.1 (C)SCEI
+Load File service.(99/11/05)
+Multi Threaded Fileio module.(99/11/15) 
+iop heap service (99/11/03)
+(UpdateVSyncRate) Mode Changed to NTSC.
+	... with user configured refresh rate: 59.94 Hz
+loadbuffer: addrres 53300 args 0 arg 
+loadbuffer: id 25, ret 0
+loadbuffer: addrres 55d00 args 0 arg 
+loadbuffer: id 26, ret 2
+loadbuffer: addrres 55d00 args 0 arg 
+loadbuffer: id 27, ret 2
+loadbuffer: addrres 5b200 args 0 arg 
+loadbuffer: id 28, ret 0
+loadbuffer: addrres 5b200 args 0 arg 
+loadbuffer: id 29, ret 0
+loadbuffer: addrres 5b200 args 0 arg 
+loadbuffer: id 30, ret 0
+loadbuffer: addrres 5b200 args 0 arg 
+loadbuffer: id 31, ret 0
+loadbuffer: addrres 65e00 args 0 arg 
+loadbuffer: id 32, ret 0
+loadbuffer: addrres 99f00 args 0 arg 
+
+==========================================================
+ 989snd (c)2000, 2001 Sony Computer Entertainment America
+ by Buzz Burrowes                               v2.9.5
+                        (built Sep  6 2002 at 16:08:07)
+                                         (pre-release 3)
+
+ NO MIDI VERSION! No MIDI, AME, or basic VAG sounds
+                  (banks and streams only)
+
+ (build with sce library rev 2.5.4)
+==========================================================
+    Thread Priorities:
+                         Sound Tick = 9
+                           Main RPC = 58
+                        Loading RPC = 59
+                          Streaming = 60, 61, 62, 63
+==========================================================
+
+loadbuffer: id 33, ret 0
+loadbuffer: addrres 65e00 args 0 arg 
+loadbuffer: id 34, ret 0
+RPC Initialize
+IOP_stashmgr: set rpc queue
+IOP free mem: 509440
+IOP_stashmgr: register function
+(FrameLimiter) Turbo ENABLED.
+[GameDB] Searching for 'scus-97199' in GameDB
+[GameDB] Found 'scus-97199' in GameDB
+[GameDB] Searching for patch with CRC 'ce4933d0'
+[GameDB] No CRC-specific patch or default patch found
+ERROR: Effect is not uploaded! Haptic: Invalid haptic device identifier
+PAD: controller (Nintendo Switch Pro Controller) detected, GUID:050000007e0500000920000001800000
+IOP free mem: 189952
+(FrameLimiter) Turbo DISABLED.
+[GameDB] Searching for 'scus-97199' in GameDB
+[GameDB] Found 'scus-97199' in GameDB
+[GameDB] Searching for patch with CRC 'ce4933d0'
+[GameDB] No CRC-specific patch or default patch found
+IOP free mem: 167680
+Delete 0 Shaders, 74 Programs, 28 Pipelines
+ERROR: Effect is not uploaded! Haptic: Invalid haptic device identifier
+PAD: controller (Nintendo Switch Pro Controller) detected, GUID:050000007e0500000920000001800000
+ERROR: Effect is not uploaded! Haptic: Invalid haptic device identifier
+PAD: controller (Nintendo Switch Pro Controller) detected, GUID:050000007e0500000920000001800000
+[GameDB] Searching for 'scus-97199' in GameDB
+[GameDB] Found 'scus-97199' in GameDB
+[GameDB] Searching for patch with CRC 'ce4933d0'
+[GameDB] No CRC-specific patch or default patch found
+isoFile open ok: /home/games/ROM/PS2/Ratchet & Clank (USA) (En,Fr,De,Es,It).iso
+	Image type  = DVD
+ * CDVD Disk Open: DVD, Single layer or unknown:
+ * * Track 1: Data (Mode 1) (2057664 sectors)
+Current Renderer: OpenGL
+EGL Version: 1.5
+EGL Extensions: EGL_ANDROID_blob_cache EGL_ANDROID_native_fence_sync EGL_CHROMIUM_sync_control EGL_EXT_buffer_age EGL_EXT_create_context_robustness EGL_EXT_image_dma_buf_import EGL_EXT_image_dma_buf_import_modifiers EGL_EXT_protected_surface EGL_EXT_swap_buffers_with_damage EGL_KHR_cl_event2 EGL_KHR_config_attribs EGL_KHR_create_context EGL_KHR_create_context_no_error EGL_KHR_fence_sync EGL_KHR_get_all_proc_addresses EGL_KHR_gl_colorspace EGL_KHR_gl_renderbuffer_image EGL_KHR_gl_texture_2D_image EGL_KHR_gl_texture_3D_image EGL_KHR_gl_texture_cubemap_image EGL_KHR_image EGL_KHR_image_base EGL_KHR_image_pixmap EGL_KHR_no_config_context EGL_KHR_reusable_sync EGL_KHR_surfaceless_context EGL_KHR_swap_buffers_with_damage EGL_EXT_pixel_format_float EGL_KHR_wait_sync EGL_MESA_configless_context EGL_MESA_drm_image EGL_MESA_image_dma_buf_export EGL_MESA_query_driver EGL_NOK_texture_from_pixmap EGL_WL_bind_wayland_display 
+Trying version 4.6 (Core)
+Got version 4.6 (Core)
+Created a OpenGL context
+GL_VENDOR: AMD
+GL_RENDERER: AMD RENOIR (DRM 3.42.0, 5.15.6-xanmod2-tt, LLVM 13.0.0)
+GL_VERSION: 4.6 (Core Profile) Mesa 21.2.6
+GL_SHADING_LANGUAGE_VERSION: 4.60
+Available VRAM/RAM:197MB for textures
+GS Lookup CRC:CE4933D0
+GS Lookup CRC:CE4933D0
+48000 SampleRate: 
+Request SDL audio driver: pulseaudio
+Opened SDL audio driver: pulseaudio
+PAD: controller (Nintendo Switch Pro Controller) detected, GUID:050000007e0500000920000001800000
+McdSlot 0 [File]: /home/martino/.config/PCSX2/memcards/Mcd001.ps2
+ERROR: Effect is not uploaded! Haptic: Invalid haptic device identifier
+McdSlot 1 [File]: /home/martino/.config/PCSX2/memcards/Mcd002.ps2
+ERROR: Effect is not uploaded! Haptic: Invalid haptic device identifier
+PAD: controller (Nintendo Switch Pro Controller) detected, GUID:050000007e0500000920000001800000
+IOP free mem: 167680
+[GameDB] Searching for 'scus-97199' in GameDB
+[GameDB] Found 'scus-97199' in GameDB
+[GameDB] Searching for patch with CRC 'ce4933d0'
+[GameDB] No CRC-specific patch or default patch found
+[GameDB] Searching for 'scus-97199' in GameDB
+[GameDB] Found 'scus-97199' in GameDB
+[GameDB] Searching for patch with CRC 'ce4933d0'
+[GameDB] No CRC-specific patch or default patch found
+Delete 0 Shaders, 60 Programs, 28 Pipelines
+HLE Host: Set 'host:' root path to: /
+
+[GameDB] Searching for 'scus-97199' in GameDB
+[GameDB] Found 'scus-97199' in GameDB
+[GameDB] Searching for patch with CRC 'ce4933d0'
+[GameDB] No CRC-specific patch or default patch found
+isoFile open ok: /home/games/ROM/PS2/Ratchet & Clank (USA) (En,Fr,De,Es,It).iso
+	Image type  = DVD
+ * CDVD Disk Open: DVD, Single layer or unknown:
+ * * Track 1: Data (Mode 1) (2057664 sectors)
+Current Renderer: OpenGL
+EGL Version: 1.5
+EGL Extensions: EGL_ANDROID_blob_cache EGL_ANDROID_native_fence_sync EGL_CHROMIUM_sync_control EGL_EXT_buffer_age EGL_EXT_create_context_robustness EGL_EXT_image_dma_buf_import EGL_EXT_image_dma_buf_import_modifiers EGL_EXT_protected_surface EGL_EXT_swap_buffers_with_damage EGL_KHR_cl_event2 EGL_KHR_config_attribs EGL_KHR_create_context EGL_KHR_create_context_no_error EGL_KHR_fence_sync EGL_KHR_get_all_proc_addresses EGL_KHR_gl_colorspace EGL_KHR_gl_renderbuffer_image EGL_KHR_gl_texture_2D_image EGL_KHR_gl_texture_3D_image EGL_KHR_gl_texture_cubemap_image EGL_KHR_image EGL_KHR_image_base EGL_KHR_image_pixmap EGL_KHR_no_config_context EGL_KHR_reusable_sync EGL_KHR_surfaceless_context EGL_KHR_swap_buffers_with_damage EGL_EXT_pixel_format_float EGL_KHR_wait_sync EGL_MESA_configless_context EGL_MESA_drm_image EGL_MESA_image_dma_buf_export EGL_MESA_query_driver EGL_NOK_texture_from_pixmap EGL_WL_bind_wayland_display 
+Trying version 4.6 (Core)
+Got version 4.6 (Core)
+Created a OpenGL context
+GL_VENDOR: AMD
+GL_RENDERER: AMD RENOIR (DRM 3.42.0, 5.15.6-xanmod2-tt, LLVM 13.0.0)
+GL_VERSION: 4.6 (Core Profile) Mesa 21.2.6
+GL_SHADING_LANGUAGE_VERSION: 4.60
+Available VRAM/RAM:247MB for textures
+GS Lookup CRC:CE4933D0
+GS Lookup CRC:CE4933D0
+48000 SampleRate: 
+Request SDL audio driver: pulseaudio
+Opened SDL audio driver: pulseaudio
+PAD: controller (Nintendo Switch Pro Controller) detected, GUID:050000007e0500000920000001800000
+ERROR: Effect is not uploaded! Haptic: Invalid haptic device identifier
+McdSlot 0 [File]: /home/martino/.config/PCSX2/memcards/Mcd001.ps2
+McdSlot 1 [File]: /home/martino/.config/PCSX2/memcards/Mcd002.ps2
+EE/iR5900-32 Recompiler Reset
+	Bios Found: USA     v01.60(07/02/2002)  Console
+	BIOS r module not found, skipping...
+	BIOS r module not found, skipping...
+	BIOS e module not found, skipping...
+# Initialize memory (rev:3.63, ctm:393Mhz, cpuclk:295Mhz detected)
+# Total accessable memory size: 32 MB (B:2:8:0) (363:2:7c30)
+
+PlayStation 2 ======== Hard reset boot
+ ROMGEN=2002-0207, IOP info (CPUID=1f, CACH_CONFIG=0, 2MB, IOP mode)
+ <20020207-164243,ROMconf,PS20160AC20020207.bin:11552>
+# TLB spad=0 kernel=1:12 default=13:30 extended=31:38
+# Initialize Start.
+# Initialize GS ...
+# Initialize INTC ...
+# Initialize TIMER ...
+# Initialize DMAC ...
+# Initialize VU1 ...
+# Initialize VIF1 ...
+# Initialize GIF ...
+# Initialize VU0 ...
+# Initialize VIF0 ...
+# Initialize IPU ...
+# Initialize FPU ...
+# Initialize User Memory ...
+# Initialize Scratch Pad ...
+# Initialize Done.
+
+EE DECI2 Manager version 0.06 Feb  7 2002 16:41:20
+  CPUID=2e20, BoardID=0, ROMGEN=2002-0207, 32M
+
+Patches: No CRC found, using 00000000 instead.
+(SYSTEM.CNF) Detected PS2 Disc = cdrom0:\SCUS_971.99;1
+(SYSTEM.CNF) Software version = 1.00
+(SYSTEM.CNF) Disc region type = NTSC
+ELF (cdrom0:\SCUS_971.99;1) Game CRC = 0xCE4933D0, EntryPoint = 0x0012D728
+(SYSTEM.CNF) Detected PS2 Disc = cdrom0:\SCUS_971.99;1
+(SYSTEM.CNF) Software version = 1.00
+(SYSTEM.CNF) Disc region type = NTSC
+
+IOP Realtime Kernel Ver.0.9.1
+    Copyright 1999 (C) Sony Computer Entertainment Inc. 
+Reboot service module.(99/11/10)
+cdvd driver module version 0.1.1 (C)SCEI
+Load File service.(99/11/05)
+Multi Threaded Fileio module.(99/11/15) 
+iop heap service (99/11/03)
+loadelf: fname cdrom0:¥SCUS_971.99;1 secname all
+loadelf version 3.30
+Input ELF format filename = cdrom0:¥SCUS_971.99;1
+0 00100080 0013d2e0 ....................
+Loaded, cdrom0:¥SCUS_971.99;1
+start address 0x12d728
+gp address 00000000
+# Restart Without Memory Clear.
+# Initialize GS ...
+# Initialize INTC ...
+# Initialize TIMER ...
+# Initialize DMAC ...
+# Initialize VU1 ...
+# Initialize VIF1 ...
+# Initialize GIF ...
+# Initialize VU0 ...
+# Initialize VIF0 ...
+# Initialize IPU ...
+# Initialize FPU ...
+# Initialize Scratch Pad ...
+# Restart Without Memory Clear Done.
+Elf entry point @ 0x0012d728 about to get recompiled. Load patches first.
+[GameDB] Searching for 'scus-97199' in GameDB
+[GameDB] Found 'scus-97199' in GameDB
+[GameDB] Searching for patch with CRC 'ce4933d0'
+[GameDB] No CRC-specific patch or default patch found
+(GameDB) Enabled Gamefix: EETimingHack
+(GameDB) Enabled Gamefix: VUKickstartHack
+Overall 0 Widescreen hacks loaded
+Loading patch 'CE4933D0.pnach' from archive '/nix/store/kjhl6cahabyr4vk7464nggs6zkhp6491-pcsx2-1.7.2105/share/PCSX2/cheats_ws.zip'
+comment: Widescreen hack by PsxFan107
+(Wide Screen Cheats DB) Patches Loaded: 64
+[GameDB] Searching for 'scus-97199' in GameDB
+[GameDB] Found 'scus-97199' in GameDB
+[GameDB] Searching for patch with CRC 'ce4933d0'
+[GameDB] No CRC-specific patch or default patch found
+Get Reboot Request From EE
+ROM directory not found
+GS Lookup CRC:CE4933D0
+GS Lookup CRC:CE4933D0
+
+PlayStation 2 ======== Update rebooting..
+
+PlayStation 2 ======== Update reboot complete
+cdvdman Init
+
+IOP Realtime Kernel Ver. 2.2
+    Copyright 1999-2002 (C) Sony Computer Entertainment Inc. 
+Reboot service module.(99/11/10)
+cdvd driver module version 0.1.1 (C)SCEI
+Load File service.(99/11/05)
+Multi Threaded Fileio module.(99/11/15) 
+iop heap service (99/11/03)
+loadbuffer: addrres 53300 args 0 arg 
+loadbuffer: id 25, ret 0
+loadbuffer: addrres 55d00 args 0 arg 
+loadbuffer: id 26, ret 2
+loadbuffer: addrres 55d00 args 0 arg 
+loadbuffer: id 27, ret 2
+loadbuffer: addrres 5b200 args 0 arg 
+loadbuffer: id 28, ret 0
+loadbuffer: addrres 5b200 args 0 arg 
+loadbuffer: id 29, ret 0
+loadbuffer: addrres 5b200 args 0 arg 
+loadbuffer: id 30, ret 0
+loadbuffer: addrres 5b200 args 0 arg 
+loadbuffer: id 31, ret 0
+loadbuffer: addrres 65e00 args 0 arg 
+loadbuffer: id 32, ret 0
+loadbuffer: addrres 99f00 args 0 arg 
+
+==========================================================
+ 989snd (c)2000, 2001 Sony Computer Entertainment America
+ by Buzz Burrowes                               v2.9.5
+                        (built Sep  6 2002 at 16:08:07)
+                                         (pre-release 3)
+
+ NO MIDI VERSION! No MIDI, AME, or basic VAG sounds
+                  (banks and streams only)
+
+ (build with sce library rev 2.5.4)
+==========================================================
+    Thread Priorities:
+                         Sound Tick = 9
+                           Main RPC = 58
+                        Loading RPC = 59
+                          Streaming = 60, 61, 62, 63
+==========================================================
+
+loadbuffer: id 33, ret 0
+loadbuffer: addrres 65e00 args 0 arg 
+loadbuffer: id 34, ret 0
+RPC Initialize
+IOP_stashmgr: set rpc queue
+IOP free mem: 509440
+IOP_stashmgr: register function
+(FrameLimiter) Turbo ENABLED.
+[GameDB] Searching for 'scus-97199' in GameDB
+[GameDB] Found 'scus-97199' in GameDB
+[GameDB] Searching for patch with CRC 'ce4933d0'
+[GameDB] No CRC-specific patch or default patch found
+IOP free mem: 189952
+(FrameLimiter) Turbo DISABLED.
+[GameDB] Searching for 'scus-97199' in GameDB
+[GameDB] Found 'scus-97199' in GameDB
+[GameDB] Searching for patch with CRC 'ce4933d0'
+[GameDB] No CRC-specific patch or default patch found
+IOP free mem: 167680
+IOP free mem: 167680
+ERROR: Effect is not uploaded! Haptic: Invalid haptic device identifier
+PAD: controller (Nintendo Switch Pro Controller) detected, GUID:050000007e0500000920000001800000
+ERROR: Effect is not uploaded! Haptic: Invalid haptic device identifier
+PAD: controller (Nintendo Switch Pro Controller) detected, GUID:050000007e0500000920000001800000
+[GameDB] Searching for 'scus-97199' in GameDB
+[GameDB] Found 'scus-97199' in GameDB
+[GameDB] Searching for patch with CRC 'ce4933d0'
+[GameDB] No CRC-specific patch or default patch found
+IOP free mem: 167680
+IOP free mem: 167680
+Delete 0 Shaders, 79 Programs, 28 Pipelines
+(GameDB) Unloading...
